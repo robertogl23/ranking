@@ -1,3 +1,28 @@
 .layout_tablero{
     display: flex;
 }
+
+.colums{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.box_lugar{
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* border-radius: 4px; */
+}
+
+.b_right{
+    border-right:1px solid #e0e0e0 ;
+}

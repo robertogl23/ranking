@@ -9,13 +9,13 @@ const Ranking = () => {
             <Container>
                 <div className={styles.layout_ranking}>
                     <section className={styles.ranking_section_tablero}>
-                        <Tablero/>
+                        <Tablero type={"análisis de datos"}/>
                     </section>
                     <section className={styles.ranking_section_tablero}>
-                        <Tablero/>
+                        <Tablero type={"ciberseguridad"}/>
                     </section>
                     <section className={styles.ranking_section_tablero}>
-                        <Tablero/>
+                        <Tablero type={"ia"}/>
                     </section>
                 </div>
             </Container>

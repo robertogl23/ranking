@@ -1,11 +1,11 @@
 import './css/index.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RankingApp from './RankingApp';
+import Ranking from './ranking/Ranking';
 
 ReactDOM.render(
   <React.StrictMode>
-    <RankingApp />
+    <Ranking/>
   </React.StrictMode>,
   document.getElementById('root')
 );
