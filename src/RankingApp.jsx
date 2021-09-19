@@ -1,9 +1,7 @@
-import React from 'react'
-import Tablero from './tablero/Tablero'
-
+import Ranking from './ranking/Ranking'
 const RankingApp = () => {
     return (
-        <Tablero/>
+        <Ranking/>
     )
 }
 

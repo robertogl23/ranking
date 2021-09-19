@@ -1,6 +1,6 @@
 const GetUserScore = async () => 
 {
-    const URL_API = "/";
+    const URL_API = "/data.json";
     const dataResponse = {
         data: {},
         error: true,
@@ -24,3 +24,5 @@ const GetUserScore = async () =>
         return dataResponse;
     }
 }
+
+export default GetUserScore;
