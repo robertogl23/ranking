@@ -1,12 +1,12 @@
 import { Typography } from "@mui/material"
-import styles from '../css/tablero.module.css';
+import Box from './Box';
 
 const Position = ({indice,puntos}) => (
-    <div className={`${styles.box_lugar} ${styles.b_right}`}>              
+    <Box width="40%">              
         <Typography variant="body2" component="header">
             {puntos === 0 ? '--' : indice + 1}
         </Typography>
-    </div>
+    </Box>
 )
 
 export default Position

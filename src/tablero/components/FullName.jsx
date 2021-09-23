@@ -1,13 +1,13 @@
 import { Typography } from "@mui/material"
-import styles from '../css/tablero.module.css';
+import Box from './Box';
 
 const FullName = ({name}) => {
     return (
-        <div className={`${styles.box} ${styles.b_right}`}>                   
+        <Box width="100%" >                   
             <Typography variant="body2" component="header">
                 {name}
             </Typography>
-        </div>
+        </Box>
     )
 }
 
