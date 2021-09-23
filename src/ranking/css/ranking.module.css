@@ -3,6 +3,8 @@
     justify-content: space-between;
     min-width: 100%;
     gap: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .ranking_section_tablero{
