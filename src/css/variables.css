@@ -1,0 +1,5 @@
+:root{
+    --white-1 : #e0e0e0;
+
+    --BorderRight : 1px solid var(--white-1);
+}
