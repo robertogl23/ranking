@@ -3,11 +3,16 @@ import { useEffect, useReducer } from "react"
 import useGetData from "../hooks/useGetData"
 import RankingContext from "./RankingContext"
 import RankingReducer from "./RankingReducer"
+
 const INITIAL_STATE = {
     isLoading:true,
     data:[],
-    isErrorApi: false
+    ia:[],
+    cs:[],
+    ad:[],
+    isErrorApi: false,
 }
+
 const RankingProvider = ( { children } ) => {
     const [ rankingState, dispatch ] = useReducer( RankingReducer, INITIAL_STATE );
     const { data } =  useGetData();
