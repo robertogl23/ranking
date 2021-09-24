@@ -1,9 +1,11 @@
-import StyledRange from './StyledRange';
 import Box from './Box';
+import { Typography } from '@mui/material';
 
 const Range = ({score}) =>  (
     <Box line={false} >
-        <StyledRange  score={score}/>
+        <Typography variant="body2" component="header">
+            {score}
+        </Typography> 
     </Box>
 );
 
