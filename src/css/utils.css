@@ -10,7 +10,14 @@
     justify-content: space-between;
 }
 
+.f-start{
+    justify-content: flex-start;
+}
 .trophy{
     width: 40px;
     position: absolute;
+}
+
+body{
+    background: var(--white-2);
 }
