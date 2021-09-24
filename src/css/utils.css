@@ -9,3 +9,8 @@
 .f-b{
     justify-content: space-between;
 }
+
+.trophy{
+    width: 40px;
+    position: absolute;
+}
