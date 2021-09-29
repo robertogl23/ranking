@@ -23,7 +23,6 @@ const RankingProvider = ( { children } ) => {
 
     useEffect(() => {
         dispatch({type:'setData',payload:data})
-        dispatch({type:'isLoading',payload:false})
     }, [data]);
     
     return (
