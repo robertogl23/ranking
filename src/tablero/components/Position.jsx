@@ -17,7 +17,7 @@ const Position = ({lugar,puntos}) => {
                 component="span" 
                 color={getColorText()} 
                 zIndex="1" 
-                marginBottom={lugar <= 3 && "14px"}
+                marginBottom={lugar > 3 ? '0' : lugar === 0 ? '0' : '14px'}
             >
                 {lugar}
             </Typography>
