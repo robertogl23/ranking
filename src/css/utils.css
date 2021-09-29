@@ -18,6 +18,10 @@
     position: absolute;
 }
 
+.username{
+    margin-left: .6rem;
+}
+
 body{
     background: var(--white-2);
 }
