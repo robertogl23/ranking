@@ -8,7 +8,7 @@ import Range from './Range';
 const Row = ({dataUser,i}) => (
     <>
         <div className={styles.colums} >
-            <Position indice={i + 1} puntos={dataUser.puntos}/>
+            <Position lugar={dataUser.lugar} puntos={dataUser.puntos}/>
             <FullName name={dataUser.nombre}/>
             <Range score={dataUser.puntos} /> 
         </div>
