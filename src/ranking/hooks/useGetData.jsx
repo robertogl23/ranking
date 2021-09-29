@@ -15,21 +15,23 @@ const useGetData = () => {
     );
 
     useEffect(() => {
-        GetUserScore()
-        .then(respuesta => {
-            const ia = respuesta.data?.filter(d => d.reto === "inteligencia artificial")
-            const cs = respuesta.data?.filter(d => d.reto === "ciberseguridad")
-            const ad = respuesta.data?.filter(d => d.reto === "análisis de datos")
-
-            const dataOrdenada = {
-                ia : dataSort(ia)?.map((dato,i) => ({...dato, lugar : getLugar(dato.puntos,i)}) ),
-                cs : dataSort(cs)?.map((dato,i) => ({...dato, lugar : getLugar(dato.puntos,i)}) ),
-                ad : dataSort(ad)?.map((dato,i) => ({...dato, lugar : getLugar(dato.puntos,i)}) ),
-                respuesta
-            }
-
-            setData(dataOrdenada)
-        })
+        setTimeout(() => {
+            GetUserScore()
+            .then(respuesta => {
+                const ia = respuesta.data?.filter(d => d.reto === "inteligencia artificial")
+                const cs = respuesta.data?.filter(d => d.reto === "ciberseguridad")
+                const ad = respuesta.data?.filter(d => d.reto === "análisis de datos")
+    
+                const dataOrdenada = {
+                    ia : dataSort(ia)?.map((dato,i) => ({...dato, lugar : getLugar(dato.puntos,i)}) ),
+                    cs : dataSort(cs)?.map((dato,i) => ({...dato, lugar : getLugar(dato.puntos,i)}) ),
+                    ad : dataSort(ad)?.map((dato,i) => ({...dato, lugar : getLugar(dato.puntos,i)}) ),
+                    respuesta
+                }
+    
+                setData(dataOrdenada)
+            })
+        },2000)
     },[])
 
     return {
