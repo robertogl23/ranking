@@ -1,6 +1,5 @@
 import { LinearProgress } from "@mui/material"
 import { useEffect, useReducer } from "react"
-import useSortData from "../../tablero/hooks/useSortData"
 import useGetData from "../hooks/useGetData"
 import RankingContext from "./RankingContext"
 import RankingReducer from "./RankingReducer"
