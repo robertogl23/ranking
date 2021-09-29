@@ -5,8 +5,8 @@ const useTrophy = ({lugar,puntos}) => {
     const drawTrophy = () => lugar > 0 && lugar <=3;
 
     const getColor = useCallback(() => (
-        lugar === 1 ? '#fff834' :
-        lugar === 2 ? '#a9a9a9' : '#95510a'
+        lugar === 1 ? '#ffeb3b' :
+        lugar === 2 ? '#bdbdbd' : '#8d6e63'
     ),[lugar])
         
 
