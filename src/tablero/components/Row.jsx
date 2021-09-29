@@ -7,9 +7,9 @@ import Range from './Range';
 
 const Row = ({dataUser,i}) => (
     <>
-        <div className={styles.colums} >
+        <div className={`${styles.colums}`} >
             <Position lugar={dataUser.lugar} puntos={dataUser.puntos}/>
-            <FullName name={dataUser.nombre}/>
+            <FullName name={dataUser.nombre} carrera={dataUser.grupo}/>
             <Range score={dataUser.puntos} /> 
         </div>
         <Divider/>
