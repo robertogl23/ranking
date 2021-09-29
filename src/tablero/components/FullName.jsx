@@ -1,14 +1,14 @@
-import { Typography } from "@mui/material"
-import Box from './Box';
+import { Typography,Tooltip } from "@mui/material"
+import StyledBox from "./StyledBox";
 
-const FullName = ({name}) => {
-    return (
-        <Box width="100%" >                   
-            <Typography variant="body2" component="header">
+const FullName = ({name,carrera}) => (
+    <StyledBox line={true} width={'100%'} className="f center f-start">              
+        <Tooltip title={`Grupo: ${carrera}`}>    
+            <Typography variant="body2" component="header" marginLeft={".6rem"}>
                 {name}
             </Typography>
-        </Box>
-    )
-}
+        </Tooltip>              
+    </StyledBox>
+)
 
 export default FullName
