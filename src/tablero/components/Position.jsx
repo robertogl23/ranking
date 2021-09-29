@@ -4,13 +4,12 @@ import useTrophy from "../hooks/useTrophy";
 import Box from './Box';
 import TrophySvg from "./TrophySvg";
 
-const Position = ({indice,puntos}) => {
+const Position = ({lugar,puntos}) => {
     const {
             getColor,
             drawTrophy,
-            getColorText,
-            getDisplayScore,
-        } = useTrophy({indice,puntos});
+            getColorText
+        } = useTrophy({lugar,puntos});
     
     return (
         <Box width="40%">              
@@ -18,9 +17,9 @@ const Position = ({indice,puntos}) => {
                 component="span" 
                 color={getColorText()} 
                 zIndex="1" 
-                marginBottom={indice <= 3 && "14px"}
+                marginBottom={lugar <= 3 && "14px"}
             >
-                {getDisplayScore()}
+                {lugar}
             </Typography>
             {drawTrophy() && (
                 <TrophySvg bgColor={getColor()}/>
