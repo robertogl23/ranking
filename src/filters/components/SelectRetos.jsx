@@ -1,18 +1,14 @@
-import { FormControl, InputLabel, MenuItem, Select } from '@mui/material'
-import { useState } from 'react';
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
+import useSelectReto from '../hooks/useSelectReto';
 const SelectRetos = () => {
-    const [age, setAge] = useState('');
-
-    const handleChange = (event) => {
-        setAge(event.target.value);
-    };
+    const {reto,handleChange} = useSelectReto();
     return (
         <FormControl fullWidth={true}>
-            <InputLabel id="demo-simple-select-label">Retos</InputLabel>
+            <InputLabel id="demo-simple-select-label">Reto</InputLabel>
             <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
-                value={age}
+                value={reto}
                 label="Retos"
                 onChange={handleChange}
             >
