@@ -5,7 +5,7 @@ import useSearchName from './useSearchName';
 const useSelectReto = () => {
     const [reto,SetReto] = useState('');
     const {rankingState, dispatch} = useContext(RankingContext);
-    const {resetData,searchName} = useSearchName();
+    const {resetData} = useSearchName();
 
     const getReto = (value) => (
         value === 10 ? 'ad' :
