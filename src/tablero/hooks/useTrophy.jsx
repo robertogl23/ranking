@@ -1,30 +1,24 @@
 import { useCallback } from "react";
 
-const useTrophy = ({indice,puntos}) => {
+const useTrophy = ({lugar,puntos}) => {
         
-    const drawTrophy = useCallback(() => (
-        indice > 0 && indice <=3
-    ),[indice]);
+    const drawTrophy = () => lugar > 0 && lugar <=3;
 
     const getColor = useCallback(() => (
-        indice === 1 ? '#fff834' :
-        indice === 2 ? '#a9a9a9' : '#95510a'
-    ),[indice])
+        lugar === 1 ? '#fff834' :
+        lugar === 2 ? '#a9a9a9' : '#95510a'
+    ),[lugar])
         
-    const getDisplayScore = useCallback(() => (
-        puntos === 0 ? '--' : indice
-    ),[puntos,indice]);
 
     const getColorText = useCallback(() => (
-        puntos === 0 || indice > 3 ? '#000' : '#fff'
-    ),[puntos,indice]);
+        puntos === 0 || lugar > 3 ? '#000' : '#fff'
+    ),[puntos,lugar]);
 
 
     return {
         getColor,
         drawTrophy,
         getColorText,
-        getDisplayScore,
     }
 }
 
