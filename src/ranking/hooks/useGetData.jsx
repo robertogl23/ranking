@@ -28,8 +28,6 @@ const useGetData = () => {
                 respuesta
             }
 
-            console.log(dataOrdenada)
-
             setData(dataOrdenada)
         })
     },[])
