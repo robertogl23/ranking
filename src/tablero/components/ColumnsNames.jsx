@@ -13,7 +13,7 @@ const names = [
         line:true
     },
     {
-        width:'100%',
+        width:'40%',
         value:'Puntaje',
         line:false
     },
