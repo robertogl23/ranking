@@ -7,13 +7,22 @@ const Tableros = () => {
     return (
         <section className={styles.layout_ranking}>
             <section className={styles.ranking_section_tablero}>
-                <Tablero data={rankingState.ad}/>
+                <Tablero 
+                    title={"Análisis de Datos"} 
+                    data={rankingState.ad}
+                />
             </section>
             <section className={styles.ranking_section_tablero}>
-                <Tablero data={rankingState.cs}/>
+                <Tablero 
+                    title={"Ciberseguridad"} 
+                    data={rankingState.cs}
+                />
             </section>
             <section className={styles.ranking_section_tablero}>
-                <Tablero data={rankingState.ia}/>
+                <Tablero 
+                    title={"Inteligencia Artificial"} 
+                    data={rankingState.ia}
+                />
             </section>
         </section>
     )
