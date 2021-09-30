@@ -28,3 +28,8 @@
     width: 100%;
 }
 
+@media (max-width: 1000px) {
+    .layout_ranking{
+        flex-direction: column;
+    }
+}
