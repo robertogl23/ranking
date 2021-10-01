@@ -11,7 +11,7 @@ const INITIAL_STATE = {
     cs:[],
     ad:[],
     dataOriginal:[],
-    reto:'',
+    reto:'ad',
     text:'',
     isErrorApi: false,
 }
