@@ -12,6 +12,7 @@ const RankingReducer = ( state, action ) => {
                 ia: action.payload?.ia,
                 cs: action.payload?.cs,
                 ad: action.payload?.ad,
+                dataOriginal:action.payload?.ad,
                 isLoading: false
             }
 
