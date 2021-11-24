@@ -1,5 +1,5 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-const  RankingContext = createContext({})
+const RankingContext = createContext({});
 
 export default RankingContext;

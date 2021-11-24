@@ -1,29 +1,29 @@
-.section_filters{
-    width: 100%;
-    height: 100%;
-    margin-top: 2rem;
+.section_filters {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
 }
-.filter_1{
-    width: 32rem;
-    gap:.8rem;
+.filter_1 {
+  width: 32rem;
+  gap: 0.8rem;
 }
-.input_search{
-    width: 60%;
+.input_search {
+  width: 60%;
 }
-.select_retos{
-    width: 40%;
+.select_retos {
+  width: 40%;
 }
 
 @media (max-width: 1000px) {
-    .filter_1{
-        display: flex;
-        flex-direction: column;
-        width:100%;
-    }
-    .input_search{
-        width: 100%;
-    }
-    .select_retos{
-        width: 100%;
-    }
+  .filter_1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .input_search {
+    width: 100%;
+  }
+  .select_retos {
+    width: 100%;
+  }
 }

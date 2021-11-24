@@ -1,6 +1,20 @@
-:root{
-    --white-1 : #e0e0e0;
-    --white-2 : #f5f4f4;
-    --linear-gradient-1 : linear-gradient(to right, #63dea3, #5cdf9d, #56df97, #4fe091, #49e08a, #44e186, #3fe183, #39e27f, #31e37e, #28e57d, #1ce67c, #06e77b);
-    --BorderRight : 1px solid var(--white-1);
+:root {
+  --white-1: #3d3d3d;
+  --white-2: #f5f4f4;
+  --linear-gradient-1: linear-gradient(
+    to right,
+    #63dea3,
+    #5cdf9d,
+    #56df97,
+    #4fe091,
+    #49e08a,
+    #44e186,
+    #3fe183,
+    #39e27f,
+    #31e37e,
+    #28e57d,
+    #1ce67c,
+    #06e77b
+  );
+  --BorderRight: 1px solid transparent;
 }

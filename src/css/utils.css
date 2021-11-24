@@ -1,27 +1,27 @@
-.f{
-    display: flex;
+.f {
+  display: flex;
 }
 .center {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.f-b{
-    justify-content: space-between;
+.f-b {
+  justify-content: space-between;
 }
 
-.f-start{
-    justify-content: flex-start;
+.f-start {
+  justify-content: flex-start;
 }
-.trophy{
-    width: 40px;
-    position: absolute;
-}
-
-.username{
-    margin-left: .6rem;
+.trophy {
+  width: 40px;
+  position: absolute;
 }
 
-body{
-    background: var(--white-2);
+.username {
+  margin-left: 0.6rem;
+}
+
+body {
+  background: rgb(24, 24, 24);
 }
