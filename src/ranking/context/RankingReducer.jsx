@@ -4,13 +4,13 @@ const RankingReducer = (state, action) => {
     // ESTABLECIONDO DATA FILTRADA POR RETO
     //
 
-    case 'setData':
+    case 'SET_RESULTADOS':
       return {
         ...state,
         data: action.payload?.respuesta?.data,
-        ia: action.payload?.ia,
-        cs: action.payload?.cs,
-        ad: action.payload?.ad,
+        ia: action.payload?.IA,
+        cs: action.payload?.CS,
+        ad: action.payload?.VJ,
         dataOriginal: action.payload?.ad,
         isLoading: false,
       };

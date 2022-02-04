@@ -1,6 +1,5 @@
 import { LinearProgress } from '@mui/material';
-import { useEffect, useReducer } from 'react';
-import useGetData from '../hooks/useGetData';
+import { useReducer } from 'react';
 import RankingContext from './RankingContext';
 import RankingReducer from './RankingReducer';
 
@@ -18,12 +17,6 @@ const INITIAL_STATE = {
 
 const RankingProvider = ({ children }) => {
   const [rankingState, dispatch] = useReducer(RankingReducer, INITIAL_STATE);
-  const { data } = useGetData();
-
-  useEffect(() => {
-    dispatch({ type: 'setData', payload: data });
-  }, [data]);
-
   return (
     <RankingContext.Provider value={{ rankingState, dispatch }}>
       {rankingState.isLoading && <LinearProgress color="secondary" />}

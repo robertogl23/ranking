@@ -2,7 +2,6 @@
   "name": "rankingv2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://robertogl23.github.io/TESICAMPWEB21/tablero/",
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",

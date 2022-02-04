@@ -1,6 +1,6 @@
-const GetUserScore = async () => {
+const getResultados = async () => {
   const URL_API =
-    'https://robertogl23.github.io/TESICAMPWEB21/tablero/data.json';
+    'https://woj31yv8ra.execute-api.us-east-1.amazonaws.com/';
   const dataResponse = {
     data: {},
     error: true,
@@ -9,17 +9,18 @@ const GetUserScore = async () => {
   };
   try {
     const response = await fetch(URL_API);
-
     dataResponse.data = await response.json();
     dataResponse.error = false;
     dataResponse.message = 'Ok';
+    dataResponse.statusCode = response.status;
   } catch (error) {
     dataResponse.data = [];
     dataResponse.error = true;
     dataResponse.message = 'error api';
+    dataResponse.statusCode = 500;
   } finally {
     return dataResponse;
   }
 };
 
-export default GetUserScore;
+export default getResultados;
